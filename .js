@@ -1,7 +1,13 @@
+(함수명{데이터})
+//()=>x 는 ()=>{return x;} 와 같다
+//object assign ,key 는 string으로만 쓸 수 있음
 createAudioFileAsync(audioSettings)
 .then(successCallback, failureCallback);
 ={const promise = createAudioFileAsync(audioSettings);
 promise.then(successCallback, failureCallback)};
+
+//if else 문 
+===console.log(sex==='condition'?'value1:'value') 
 
 //for each method는 배열의 모든 요소에 대해 반복적으로 주어진 콜백함수 반복
 var = a ['a','b','c']
@@ -18,6 +24,8 @@ var a1 = ['a',10,'b',20,'c',30]
 var a2 = a1.filter(function(item){return typeof item==='number';});
 console.log(a2); //logs ['10','20','30']
 
+//method 는 객체의 속성 중 함수인 것 
+
 initializer 
 while(exit - condition){
     code 
@@ -29,6 +37,17 @@ while(exit - condition{
     code
     final - expression
 })while exit condition
+
+for(initaializer;exit-condition;final-expression)
+arr=357 , foo `hello`
+for (let i in arr) console.log(i); // log 0 1 2 foo 속성의 이름이 결과값
+for (let i of arr) console.log(i);// log 3 5 7 속성의 값
+
+
+//ITERATOR
+for each(call back,[thisObject]) - 배열의 모든 요소에 대해 반복적으로 주어진 콜백함수 실행
+map(call back,[thisObject]) = 배열의 모든 요소에 대해 콜백함수를 실행하고, 실행결과를 새로운 배열에 담아 반환
+filter(call back,[thisObject]) = 배열의 모든 요소에 대해 콜백함수가 true를 반환하는 요소를 새로운 배열에 담아 반환
 
 promise(resolve,reject)
 settimeout() - 괄호안의 시간이 지난뒤에 실행

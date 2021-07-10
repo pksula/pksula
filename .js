@@ -53,5 +53,31 @@ promise(resolve,reject)
 settimeout() - 괄호안의 시간이 지난뒤에 실행
 setanimationframe() - 설정된 시간 사이에 함수반복
 async - 동기함수로 만들어버림? await 로 안에서의 속도 조절
+fetch?
 
 import{function()}.from'./file'; <>export
+
+var obj = object.create(null{
+    x:{value:100,enumerable:true},
+    y:{value:200,enumerable:true}
+});
+obj.x;
+obj.y;
+object.getPrototypeOf(obj); //객체의 프로토타입을 반환해줌
+
+//일반함수
+var foo = function() {console.log("foo")};
+//arrow함수
+var bar() =>console.log("bar")
+//매개변수가 없는 경우
+var foo =() ->console.log('bar');
+foo(); //bar
+//하나인 경우
+var foo = x =>x;
+foo('bar');//bar
+//여러개인 경우 
+var foo(a,b) =>a+b;
+foo(1,2); //3
+var foo = (a,b) =>{a+b};
+foo(1,2) //undefined  중괄호 안에 return이 없기 때문
+//일반함수가 전역에서 실행될 때 this가 정의하고 arrow함수는 this를 정의하지 않음
